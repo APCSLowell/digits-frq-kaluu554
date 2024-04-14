@@ -7,8 +7,9 @@ public class Digits
 
 	public Digits(int num)
 	{ /* to be implemented in part (a) */ 
+	    int n = num%10;
 	    while(num > 0){
-		digitList.add(0,num%10);
+		digitList.add(0,n);
 		num = num/10;
 	    }
 	}
